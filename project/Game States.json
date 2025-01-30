@@ -1,0 +1,24 @@
+"Game States":
+    Home Screen room - Menu State {
+        - instructions are displayed
+        - pressing enter puts you in the game state
+    }  
+    Maze 1 room - Game State {
+        - this is where the game takes place
+        - losing all health restarts the room
+        - losing all lives puts you in the Lose state
+        - getting to the end of the maze moves you to the next room
+    }
+    Last Maze - Game State {
+        - losing all health restarts the room
+        - losing all lives puts you in the Lose State
+        - getting to the end of the maze moves you to the win state
+    }
+    You won! - Win State {
+        - displays "You won!" and final score
+        - Pressing enter puts you in the Menu state
+    }
+    You lost - Lose State {
+        - displays "You lost!" and final score
+        - Pressing enter puts you in the Menu state
+    }

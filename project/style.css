@@ -1,0 +1,116 @@
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+header {
+    background-image: url("images/blogwp_how-to-grill-steaks-perfectly-for-beginners-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header div {
+    background-color: #ede4d974;
+    padding: 1em;
+}
+nav {
+    background-color: #74361e;
+    color: #ede4d9;
+}
+nav button {
+    height: 4em;
+    width: 4em;
+}
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #ede4d9;
+}
+nav li a {
+    padding: 0.5em 1em;
+    border: 1px solid #ede4d9;
+    background-color: #74361e;
+    color: #ede4d9;
+    display: block;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: #74361e;
+    background-color: #ede4d9;
+}
+#navbar {
+    opacity: 0;
+    height: auto;
+    transform: translateX(-200em);
+    transition: opacity 1.5s, transform 1s;
+}
+#navbar.open {
+    transform: translateX(0);
+    opacity: 1;
+}
+header,
+section,
+footer {
+    padding: 0.5em 1em;
+    clear: both;
+}
+section:nth-child(odd) {
+    background-color: #ede4d9;
+}
+figure {
+    max-width: 500px;
+}
+figure img {
+    width: 100%;
+}
+footer {
+    background-color: #74361e;
+    color: #ede4d9;
+}
+
+/* tablet size 600px or so */
+@media screen and (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+    #menu-toggle {
+        transform: translateX(-200em);
+    }
+    #navbar {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* full screen styles */
+@media screen and (min-width: 800px) {
+    body {
+        font-size: x-large;
+    }
+    header {
+        padding-top: 0;
+        height: 20em;
+    }
+    header div {
+        width: 70%;
+        margin-top: 4em;
+    }
+    figure {
+        float: right;
+    }
+    figure.left {
+        float: left;
+    }
+    p {
+        max-width: 40em;
+    }
+    section div {
+        width: 50em;
+        max-width: 98%;
+        margin: 0 auto;
+    }
+}
